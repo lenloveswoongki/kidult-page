@@ -1,0 +1,151 @@
+﻿body
+{
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+    header .logo img {
+        height: 50px;
+    }
+
+    header nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+            header nav ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+
+                header nav ul li a:hover {
+                    color: #aaa;
+                }
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f9f9f9;
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+/* Juegos */
+.games {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+    .games h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    background: #fafafa;
+}
+
+    .game-card iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+/* Sobre Nosotros */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+.about-logo {
+    height: 80px;
+    margin: 20px 0;
+}
+
+/* Contacto */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .contact input,
+    .contact textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .contact button {
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+        .contact button:hover {
+            background: #333;
+        }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+}
