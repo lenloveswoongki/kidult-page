@@ -74,11 +74,9 @@ header nav ul li a:hover {
 .game-container {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Ajusta el máximo tamaño si es necesario */
-    height: 0;
-    padding-bottom: 56.25%; /* Relación 16:9 */
+    height: 100vh; /* Ocupa toda la altura del navegador */
     background-color: #000;
-    margin: 0 auto; /* Centra el contenedor */
+    margin: 0;
 }
 
 .game-container iframe {
@@ -86,8 +84,8 @@ header nav ul li a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    border: none; /* Quita bordes */
+    height: 100%; /* Ajusta el iframe al contenedor */
+    border: none; /* Sin bordes */
 }
 
 .game-card {

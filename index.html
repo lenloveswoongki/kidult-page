@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>KIDULT - Estudio de Juegos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -34,7 +34,7 @@
         <div class="game-container">
             <div class="game-card">
                 <h3>Arrayito</h3>
-                <!-- Cargar el juego dentro de un contenedor responsivo -->
+                <!-- Juego responsivo dentro del contenedor -->
                 <div class="game-container">
                     <iframe src="game/index.html" frameborder="0"></iframe>
                 </div>
@@ -64,5 +64,16 @@
     <footer>
         <p>&copy; 2024 KIDULT. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Ajuste del iframe al tamaño de la ventana -->
+    <script>
+        window.addEventListener('resize', () => {
+            const iframe = document.querySelector('iframe');
+            iframe.style.height = window.innerHeight + 'px';
+        });
+
+        // Ajuste inicial del tamaño
+        window.dispatchEvent(new Event('resize'));
+    </script>
 </body>
 </html>
